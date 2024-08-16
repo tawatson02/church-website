@@ -1,39 +1,60 @@
 import React from 'react';
+import Mural from '../assets/logos/Mural Background.png';
+import 'flowbite';
 
 function Homepage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div
+      className="min-h-screen flex flex-col bg-cover  bg-center"
+      style={{ backgroundImage: `url(${Mural})` }}
+    >
+{/* Hero Section */}
+<section className="flex-1 flex items-center justify-center  text-black py-20">
+<a  class="block p-6 bg-white bg-opacity-80 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 
-      {/* Hero Section */}
-      <section className="flex-1 bg-gray-100 flex items-center justify-center">
-        <div className="text-center p-8">
-          <h2 className="text-4xl font-bold mb-4">Welcome to My Website</h2>
-          <p className="text-lg text-gray-700 mb-6">A place to showcase my work and projects.</p>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">Get Started</button>
-        </div>
-      </section>
+  <div className="text-center p-8 bg-whiteSmoke bg-opacity-50 rounded-lg shadow-lg">
+    <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg text-lightBlue ">
+      Welcome to Amory First Assembly of God
+    </h1>
+    <p className="text-xl md:text-2xl mb-8 drop-shadow-md">
+      We are a church that is Relational, Real, and Relevant! <br/><br/>
+      We are a church dedicated to families. We have different ministries for all ages. When you walk into the doors of our church, our goal is to make you feel welcome and show the love of Christ. <br/><br/>
+      Sunday School is at 9:30 A.M. <br/>
+      Service is at 10:30 A.M. <br/>
+      Wednesday Night at 6:30 P.M.
+    </p>
+  </div>
+  </a>
+</section>
 
       {/* Feature Section */}
-      <section className="bg-white py-12">
+      <section className=" py-16 ">
         <div className="container mx-auto text-center">
-          <h3 className="text-3xl font-semibold mb-8">Features</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 border rounded-lg shadow-md">
-              <h4 className="text-xl font-bold mb-2">Feature 1</h4>
-              <p className="text-gray-600">Description of feature 1.</p>
+          <h3 className="text-4xl font-semibold mb-12 text-gunmetal">
+            Get to know us!
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 ">
+            <div className="p-8 bg-lightBlue rounded-lg shadow-lg hover:bg-darkerBlue">
+              <h4 className="text-2xl text-white font-bold mb-4">Staff</h4>
+              <p className="text-gray-700">
+                Description of feature 1.
+              </p>
             </div>
-            <div className="p-6 border rounded-lg shadow-md">
-              <h4 className="text-xl font-bold mb-2">Feature 2</h4>
-              <p className="text-gray-600">Description of feature 2.</p>
+            <div className="p-8 bg-lightBlue rounded-lg shadow-lg hover:bg-darkerBlue">
+              <h4 className="text-2xl text-white font-bold mb-4">Ministries</h4>
+              <p className="text-gray-700">
+                Description of feature 2.
+              </p>
             </div>
-            <div className="p-6 border rounded-lg shadow-md">
-              <h4 className="text-xl font-bold mb-2">Feature 3</h4>
-              <p className="text-gray-600">Description of feature 3.</p>
+            <div className="p-8 bg-lightBlue rounded-lg shadow-lg hover:bg-darkerBlue">
+              <h4 className="text-2xl text-white font-bold mb-4">Calendar</h4>
+              <p className="text-gray-700">
+                Description of feature 3.
+              </p>
             </div>
           </div>
         </div>
       </section>
-
     </div>
   );
 }
