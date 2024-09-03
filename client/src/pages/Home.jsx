@@ -1,57 +1,53 @@
 import React from 'react';
-import Mural from '../assets/logos/Mural Background.png';
+import BackgroundImage from '../assets/images/service-picture-bw.jpg';
+import LogoImage from '../assets/logos/New AFA Logo-4.png';
+import ServicePic from '../assets/images/justin-letterstochurch.jpg';
 import 'flowbite';
 
 function Homepage() {
   return (
-    <div
-      className="min-h-screen flex flex-col bg-cover  bg-center"
-      style={{ backgroundImage: `url(${Mural})` }}
-    >
-{/* Hero Section */}
-<section className="flex-1 flex items-center justify-center  text-black py-20">
-<a  class="block p-6 bg-white bg-opacity-80 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <div className="min-h-screen flex flex-col">
+      {/* Logo Section with Background Image */}
+      <section
+        className="h-screen bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: `url(${BackgroundImage})` }}
+      >
+        <img
+          src={LogoImage}
+          alt="Logo"
+          className="opacity-0 animate-fade-in w-full max-w-3xl md:max-w-5xl" // Adjusted size
+        />
+      </section>
 
-  <div className="text-center p-8 bg-whiteSmoke bg-opacity-50 rounded-lg shadow-lg">
-    <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg text-lightBlue ">
-      Welcome to Amory First Assembly of God
-    </h1>
-    <p className="text-xl md:text-2xl mb-8 drop-shadow-md">
-      We are a church that is Relational, Real, and Relevant! <br/><br/>
-      We are a church dedicated to families. We have different ministries for all ages. When you walk into the doors of our church, our goal is to make you feel welcome and show the love of Christ. <br/><br/>
-      Sunday School is at 9:30 A.M. <br/>
-      Service is at 10:30 A.M. <br/>
-      Wednesday Night at 6:30 P.M.
-    </p>
-  </div>
-  </a>
-</section>
+      {/* Hero Section with Solid Background Color */}
+      <section
+        className="flex-1 flex flex-col md:flex-row items-center justify-center text-white py-20 px-4"
+        style={{ backgroundColor: '#011638' }}
+      >
+        {/* Image on the Left */}
+        <div className="w-full md:w-1/3 mb-8 md:mb-0">
+          <img
+            src={ServicePic}
+            alt="Service Background"
+            className="rounded-lg shadow-2xl mx-auto md:ml-0"
+          />
+        </div>
 
-      {/* Feature Section */}
-      <section className=" py-16 ">
-        <div className="container mx-auto text-center">
-          <h3 className="text-4xl font-semibold mb-12 text-gunmetal">
-            Get to know us!
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 ">
-            <div className="p-8 bg-lightBlue rounded-lg shadow-lg hover:bg-darkerBlue">
-              <h4 className="text-2xl text-white font-bold mb-4">Staff</h4>
-              <p className="text-gray-700">
-                Description of feature 1.
-              </p>
-            </div>
-            <div className="p-8 bg-lightBlue rounded-lg shadow-lg hover:bg-darkerBlue">
-              <h4 className="text-2xl text-white font-bold mb-4">Ministries</h4>
-              <p className="text-gray-700">
-                Description of feature 2.
-              </p>
-            </div>
-            <div className="p-8 bg-lightBlue rounded-lg shadow-lg hover:bg-darkerBlue">
-              <h4 className="text-2xl text-white font-bold mb-4">Calendar</h4>
-              <p className="text-gray-700">
-                Description of feature 3.
-              </p>
-            </div>
+        {/* Text Box on the Right */}
+        <div className="w-full md:w-2/3 flex justify-center md:justify-start">
+          <div className="p-10 bg-gradient-to-r from-lightBlue to-paleGreen text-white rounded-xl shadow-xl">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center md:text-left">
+              Welcome to Amory First Assembly of God
+            </h1>
+            <p className="text-lg md:text-2xl mb-6 leading-relaxed">
+              We are a church that is Relational, Real, and Relevant! <br /><br />
+              We are dedicated to families with ministries for all ages. When you walk through our doors, we aim to make you feel welcome and show the love of Christ. <br /><br />
+            </p>
+            <p className="text-xl md:text-3xl font-bold text-center leading-relaxed"> {/* Increased text size and bold */}
+              Sunday School: 9:30 A.M. <br />
+              Service: 10:30 A.M. <br />
+              Wednesday Night: 6:30 P.M.
+            </p>
           </div>
         </div>
       </section>
