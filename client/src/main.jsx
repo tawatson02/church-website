@@ -5,6 +5,7 @@ import './index.css';
 import 'flowbite';
 import App from './App.jsx'
 import Home from './pages/Home'
+import Staff from './pages/Staff.jsx'
 
 const router = createBrowserRouter ([
     {
@@ -16,10 +17,14 @@ const router = createBrowserRouter ([
                 index: true,
                 element: <Home />
             },
+            {
+                path: 'staff',
+                element: <Staff />
+            }
         ]
     }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router = {router} />
-)
+);

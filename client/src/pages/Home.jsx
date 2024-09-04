@@ -2,6 +2,7 @@ import React from 'react';
 import BackgroundImage from '../assets/images/service-picture-bw.jpg';
 import LogoImage from '../assets/logos/New AFA Logo-4.png';
 import ServicePic from '../assets/images/justin-letterstochurch.jpg';
+
 import 'flowbite';
 
 function Homepage() {
