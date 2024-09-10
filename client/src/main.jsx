@@ -6,7 +6,7 @@ import 'flowbite';
 import App from './App.jsx'
 import Home from './pages/Home'
 import Staff from './pages/Staff.jsx'
-
+import About from './pages/About.jsx'
 const router = createBrowserRouter ([
     {
         path: '/',
@@ -20,6 +20,10 @@ const router = createBrowserRouter ([
             {
                 path: 'staff',
                 element: <Staff />
+            },
+            {
+                path: 'about',
+                element: <About />
             }
         ]
     }

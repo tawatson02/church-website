@@ -13,7 +13,7 @@ const Header = () => {
     setIsMenuOpen(false);
   };
   return (
-    <nav className="border-gray-200 bg-oxfordBlue dark:bg-gray-800 dark:border-gray-700">
+    <nav className="border-gray-200 bg-gunmetal dark:bg-gray-800 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={logo} className="h-12" alt="Logo" />
