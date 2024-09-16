@@ -11,9 +11,21 @@ function Calendar() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold mb-4">Church Events Calendar</h1>
-      <div id="calendar-container" className="w-full"></div>
+    <div className="min-h-screen flex flex-col">
+      {/* Header Section */}
+      <section className="flex items-center justify-center py-10 bg-gunmetal">
+        <h1 className="text-white text-5xl font-bold">Church Events Calendar</h1>
+      </section>
+
+      {/* Calendar Section */}
+      <section className="flex-1 flex items-center justify-center py-20 px-4 bg-gunmetal">
+        <div
+          id="calendar-container"
+          className="w-full max-w-4xl bg-white shadow-2xl rounded-lg p-8"
+        >
+          
+        </div>
+      </section>
     </div>
   );
 }
