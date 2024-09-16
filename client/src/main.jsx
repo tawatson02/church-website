@@ -7,6 +7,7 @@ import App from './App.jsx'
 import Home from './pages/Home'
 import Staff from './pages/Staff.jsx'
 import About from './pages/About.jsx'
+import Calendar from './pages/Calendar.jsx';
 const router = createBrowserRouter ([
     {
         path: '/',
@@ -24,6 +25,10 @@ const router = createBrowserRouter ([
             {
                 path: 'about',
                 element: <About />
+            },
+            {
+                path: 'calendar',
+                element: <Calendar />
             }
         ]
     }
